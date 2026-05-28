@@ -240,6 +240,9 @@ ul { list-style: none; }
 .footer__top { display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; }
 .footer__desc { color: var(--muted); font-size: .85rem; }
 .footer__bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+.footer__emails { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; margin-top: .75rem; }
+.footer__emails a { font-size: .82rem; color: var(--muted); transition: color var(--tr); }
+.footer__emails a:hover { color: var(--purple); }
 .footer__copy { font-size: .8rem; color: var(--muted); }
 .footer__links { display: flex; gap: 1.5rem; }
 .footer__links a { font-size: .8rem; color: var(--muted); transition: color var(--tr); }
