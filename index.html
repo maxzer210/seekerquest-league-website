@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seeker Quest — League</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="#">
+        <span class="logo-icon">⬡</span>
+        <span>Seeker<strong>Quest</strong></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#league">League</a></li>
+        <li><a href="#join" class="btn btn--outline">Join Now</a></li>
+      </ul>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="nav__mobile" id="mobileMenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#league">League</a></li>
+      <li><a href="#join">Join Now</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <div class="hero__bg">
+      <div class="orb orb--1"></div>
+      <div class="orb orb--2"></div>
+      <div class="orb orb--3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__badge">Season 1 · Now Live</div>
+      <h1 class="hero__title">
+        Seeker<br /><span class="gradient-text">Quest</span>
+      </h1>
+      <p class="hero__subtitle">
+        The ultimate competitive league where explorers, strategists,<br />
+        and legends battle for glory across hidden realms.
+      </p>
+      <div class="hero__actions">
+        <a href="#join" class="btn btn--primary btn--lg">Enter the League</a>
+        <a href="#about" class="btn btn--ghost btn--lg">Learn More</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__value" data-target="12400">0</span>
+          <span class="stat__label">Seekers</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__value" data-target="340">0</span>
+          <span class="stat__label">Quests</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__value" data-target="48">0</span>
+          <span class="stat__label">Realms</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__visual">
+          <div class="card-3d">
+            <div class="card-3d__face">
+              <div class="rune-circle">
+                <svg viewBox="0 0 200 200" class="rune-svg">
+                  <circle cx="100" cy="100" r="90" fill="none" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+                  <circle cx="100" cy="100" r="70" fill="none" stroke="rgba(139,92,246,0.5)" stroke-width="1" stroke-dasharray="4 4"/>
+                  <circle cx="100" cy="100" r="50" fill="none" stroke="rgba(139,92,246,0.7)" stroke-width="1"/>
+                  <polygon points="100,20 173,65 173,135 100,180 27,135 27,65" fill="none" stroke="rgba(139,92,246,0.6)" stroke-width="1.5"/>
+                  <circle cx="100" cy="100" r="12" fill="rgba(139,92,246,0.8)"/>
+                  <circle cx="100" cy="100" r="6" fill="#fff"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about__text">
+          <div class="section__tag">What is Seeker Quest?</div>
+          <h2 class="section__title">A Living World<br />of Challenges</h2>
+          <p>
+            Seeker Quest is a competitive adventure league that merges strategy, exploration, and skill into a single ever-evolving experience. Players take on the role of Seekers — elite agents tasked with uncovering secrets across procedurally-generated realms.
+          </p>
+          <p>
+            Earn points, climb the leaderboard, and claim legendary status in your division. New quests drop every week, each with unique mechanics and rare rewards.
+          </p>
+          <a href="#join" class="btn btn--primary">Start Your Journey</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section features" id="features">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__tag">Core Mechanics</div>
+        <h2 class="section__title">Built for Seekers</h2>
+        <p class="section__desc">Every system crafted to reward exploration, cunning, and teamwork.</p>
+      </div>
+      <div class="features__grid">
+        <div class="feature-card" data-delay="0">
+          <div class="feature-card__icon">🗺️</div>
+          <h3>Dynamic Realms</h3>
+          <p>Each season introduces procedurally-generated realms with unique biomes, lore, and hidden paths.</p>
+        </div>
+        <div class="feature-card" data-delay="100">
+          <div class="feature-card__icon">⚔️</div>
+          <h3>Competitive Duels</h3>
+          <p>Challenge rival Seekers in real-time knowledge and strategy duels. Rise through five competitive tiers.</p>
+        </div>
+        <div class="feature-card" data-delay="200">
+          <div class="feature-card__icon">🏆</div>
+          <h3>League Seasons</h3>
+          <p>Timed seasons with exclusive cosmetics, rank resets, and grand tournament finals streamed live.</p>
+        </div>
+        <div class="feature-card" data-delay="300">
+          <div class="feature-card__icon">🔮</div>
+          <h3>Arcane Artifacts</h3>
+          <p>Collect powerful artifacts that modify gameplay, unlock lore entries, and grant seasonal bonuses.</p>
+        </div>
+        <div class="feature-card" data-delay="400">
+          <div class="feature-card__icon">🤝</div>
+          <h3>Guild System</h3>
+          <p>Form guilds, share maps, coordinate quest runs, and compete in guild leaderboards for collective glory.</p>
+        </div>
+        <div class="feature-card" data-delay="500">
+          <div class="feature-card__icon">📜</div>
+          <h3>Lore Archives</h3>
+          <p>Uncover an expanding narrative through quest completions, clues, and ancient cipher puzzles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAGUE TIERS -->
+  <section class="section league" id="league">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__tag">Ranking System</div>
+        <h2 class="section__title">The League Tiers</h2>
+        <p class="section__desc">Compete and climb — every rank unlocks new challenges and rewards.</p>
+      </div>
+      <div class="tiers">
+        <div class="tier tier--bronze">
+          <div class="tier__emblem">🥉</div>
+          <div class="tier__name">Initiate</div>
+          <div class="tier__range">0 – 999 pts</div>
+          <ul class="tier__perks">
+            <li>Access to starter quests</li>
+            <li>Basic artifact slots</li>
+            <li>Community forums</li>
+          </ul>
+        </div>
+        <div class="tier tier--silver">
+          <div class="tier__emblem">🥈</div>
+          <div class="tier__name">Wanderer</div>
+          <div class="tier__range">1 000 – 4 999 pts</div>
+          <ul class="tier__perks">
+            <li>Exclusive weekly quests</li>
+            <li>Duel matchmaking</li>
+            <li>Guild access</li>
+          </ul>
+        </div>
+        <div class="tier tier--gold tier--featured">
+          <div class="tier__badge">Most Popular</div>
+          <div class="tier__emblem">🥇</div>
+          <div class="tier__name">Pathfinder</div>
+          <div class="tier__range">5 000 – 14 999 pts</div>
+          <ul class="tier__perks">
+            <li>Rare artifact drops</li>
+            <li>Seasonal cosmetics</li>
+            <li>Priority tournament entry</li>
+            <li>Lore archive access</li>
+          </ul>
+        </div>
+        <div class="tier tier--platinum">
+          <div class="tier__emblem">💎</div>
+          <div class="tier__name">Vanguard</div>
+          <div class="tier__range">15 000 – 49 999 pts</div>
+          <ul class="tier__perks">
+            <li>Custom realm creation</li>
+            <li>Beta feature access</li>
+            <li>Legendary artifact slots</li>
+          </ul>
+        </div>
+        <div class="tier tier--legend">
+          <div class="tier__emblem">👑</div>
+          <div class="tier__name">Legend</div>
+          <div class="tier__range">50 000+ pts</div>
+          <ul class="tier__perks">
+            <li>All features unlocked</li>
+            <li>Hall of Fame entry</li>
+            <li>Dev council vote</li>
+            <li>Exclusive Legend title</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN CTA -->
+  <section class="section cta" id="join">
+    <div class="cta__bg">
+      <div class="orb orb--4"></div>
+      <div class="orb orb--5"></div>
+    </div>
+    <div class="container">
+      <div class="cta__inner">
+        <div class="section__tag">Ready to Begin?</div>
+        <h2 class="section__title">Your Quest Awaits</h2>
+        <p>Join thousands of Seekers already competing in Season 1. Registration is free — claim your rank today.</p>
+        <form class="cta__form" id="joinForm">
+          <input type="email" placeholder="Enter your email address" class="input" required />
+          <button type="submit" class="btn btn--primary btn--lg">Claim Your Spot</button>
+        </form>
+        <p class="cta__note">No credit card required · Free to play · Season 1 ends Dec 31, 2026</p>
+        <div class="cta__success" id="formSuccess">
+          🎉 You're on the list! Watch your inbox for your Seeker invite.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a class="nav__logo" href="#">
+          <span class="logo-icon">⬡</span>
+          <span>Seeker<strong>Quest</strong></span>
+        </a>
+        <p class="footer__copy">© 2026 SeekerQuest League. All rights reserved.</p>
+        <ul class="footer__links">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
