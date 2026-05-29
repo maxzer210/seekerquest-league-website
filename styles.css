@@ -187,6 +187,26 @@ ul { list-style: none; }
 .tok-card--red { border-color: rgba(244,63,94,.3); }
 .tok-card--red .tok-card__val { color: var(--red); }
 
+/* 3-Token Economy */
+.token-economy { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem; margin-bottom: 3.5rem; }
+.te-card { padding: 1.75rem; border-radius: var(--radius); background: var(--bg); border: 1px solid var(--border); transition: transform var(--tr), box-shadow var(--tr); }
+.te-card:hover { transform: translateY(-4px); }
+.te-card__header { display: flex; align-items: center; gap: .75rem; margin-bottom: .75rem; }
+.te-card__icon { font-size: 1.8rem; }
+.te-card__name { font-family: 'Orbitron', sans-serif; font-size: 1.1rem; font-weight: 700; }
+.te-card__type { font-size: .72rem; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; font-family: 'Rajdhani', sans-serif; }
+.te-card__desc { font-size: .85rem; color: var(--muted); line-height: 1.6; margin-bottom: .75rem; }
+.te-card__badges { display: flex; flex-direction: column; gap: .4rem; }
+.te-badge { display: inline-block; padding: .3rem .75rem; border-radius: 9999px; font-size: .72rem; font-weight: 700; font-family: 'Rajdhani', sans-serif; letter-spacing: .05em; }
+.te-badge--hot { background: rgba(153,69,255,.15); border: 1px solid rgba(153,69,255,.4); color: var(--purple); }
+.te-badge--airdrop { background: rgba(20,241,149,.12); border: 1px solid rgba(20,241,149,.35); color: var(--green); }
+.te-card--sol { border-color: rgba(245,158,11,.3); }
+.te-card--sol .te-card__name { color: var(--gold); }
+.te-card--skora { border-color: rgba(153,69,255,.4); box-shadow: 0 0 30px rgba(153,69,255,.1); }
+.te-card--skora .te-card__name { background: linear-gradient(135deg, var(--purple), var(--pink)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.te-card--orb { border-color: rgba(6,182,212,.3); }
+.te-card--orb .te-card__name { color: var(--cyan); }
+
 /* Vesting */
 .vesting { padding: 3rem; background: var(--bg); border-radius: var(--radius); border: 1px solid var(--border); }
 .vesting__title { font-family: 'Orbitron', sans-serif; font-size: 1.1rem; margin-bottom: 2rem; }
@@ -253,6 +273,7 @@ ul { list-style: none; }
 
 /* ── Responsive ── */
 @media (max-width: 900px) {
+  .token-economy { grid-template-columns: 1fr; }
   .tok__grid { grid-template-columns: 1fr; }
   .tok__chart-wrap { flex-direction: row; flex-wrap: wrap; justify-content: center; }
   .about__grid { grid-template-columns: 1fr; gap: 2.5rem; }
