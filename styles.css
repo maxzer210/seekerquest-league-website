@@ -243,6 +243,9 @@ ul { list-style: none; }
 .footer__emails { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; margin-top: .75rem; }
 .footer__emails a { font-size: .82rem; color: var(--muted); transition: color var(--tr); }
 .footer__emails a:hover { color: var(--purple); }
+.footer__socials { display: flex; gap: .75rem; margin-bottom: .75rem; }
+.footer__social { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(255,255,255,.06); border: 1px solid var(--border); font-size: 1rem; transition: var(--tr); }
+.footer__social:hover { background: rgba(153,69,255,.2); border-color: var(--purple); transform: translateY(-2px); }
 .footer__copy { font-size: .8rem; color: var(--muted); }
 .footer__links { display: flex; gap: 1.5rem; }
 .footer__links a { font-size: .8rem; color: var(--muted); transition: color var(--tr); }
